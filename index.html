@@ -1,47 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Página tributo al mejor jugador de todos los tiempos, Lionel Andrés Cuccitini Messi">
-  <!-- My CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <title>Lionel Messi - Tributo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/856e1e596e.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=Source+Sans+3:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Lionel Messi</title>
 </head>
 
 <body>
-  <main id="main">
-    <section id="cover" aria-labelledby="title">
-      <h1 id="title">Lionel Andrés Messi Cuccitini</h1>
+
+  <header class="header" id="top">
+    <h2 class="header__title">Lionel Messi</h2>
+    <nav class="navbar">
+      <ul class="navbar__menu">
+        <li class="navbar__menu-item"><a href="#inicio" class="navbar__menu-link" title="">Inicio</a></li>
+        <li class="navbar__menu-item"><a href="#bio" class="navbar__menu-link" title="">Biografía</a></li>
+        <li class="navbar__menu-item"><a href="#trayectoria" class="navbar__menu-link" title="">Trayectoria</a></li>
+        <li class="navbar__menu-item"><a href="#logros" class="navbar__menu-link" title="">Logros</a></li>
+      </ul>
+    </nav>
+    <button class="header__toggle-btn fas fa-bars" title="Expandir menú"></button>
+  </header>
+
+  <main class="main">
+    <section class="hero" id="inicio" aria-labelledby="inicio-title">
+      <!-- Left -->
+      <div class="text-wrapper">
+        <h1 class="hero__title" id="inicio-title">Lionel <br> Messi</h1>
+        <p class="hero__subtitle">El mejor jugador de todos los tiempos</p>
+      </div>
+      <!-- Right -->
+      <img src="./images/messi-mundial.png" alt="Lionel Messi - El mejor jugador de todos los tiempos"
+        class="hero__img">
     </section>
 
-    <div id="content">
-      <figure id="img-div">
-        <img
-          src="https://www.fcbarcelona.com/fcbarcelona/photo/2019/12/03/5d52837b-ea2a-4274-8bf1-b4ad3b50af80/Messi-2009-FOTO-FRANCE-FOOTBALL.jpg"
-          alt="Leonel Messi posando junto a su primer Balón de Oro" id="image">
-        <figcaption id="img-caption">Leo Messi junto a su primer Balón de Oro. El inicio de una historia que estaría
-          marcada por récords y logros.
-        </figcaption>
-      </figure>
+    <section class="section" id="bio" aria-labelledby="bio-title">
+      <h2 class="section__title" id="bio-title">De Rosario, al mundo</h2>
+      <p class="section__paragraph">Lionel Andrés Messi Cuccittini, conocido en todo el mundo como simplemente "Leo",
+        nació el 24 de junio de 1987
+        en la ciudad de Rosario, ubicada en la provincia de Santa Fe, Argentina. Es el tercer hijo del matrimonio
+        conformado por Jorge Messi y Celia Cuccittini, compartiendo sus días con sus hermanos mayores Rodrigo y Matías,
+        así como con su hermana menor, María Sol.</p>
 
-      <section id="info-section" aria-labelledby="tribute-info">
-        <p id="tribute-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequatur, ipsum facere,
-          velit
-          possimus quibusdam, nulla dolorum incidunt illo impedit delectus quaerat! Rem nesciunt rerum fugit distinctio
-          molestias nisi perferendis?</p>
-        <p>Visita la <a id="tribute-link" href="https://messi.com" target="_blank">página web oficial de Messi</a> para
-          saber más.</p>
+      <p class="section__paragraph">Los primeros pasos futbolísticos de Messi los dio en el Abanderado Abanderado
+        Grandoli, un
+        modesto club ubicado en el sur
+        de Rosario, muy cerca de su hogar en el barrio Grandoli. En esas calles y canchas es donde Leo
+        comenzó a forjar
+        su mágia y talento, bajo la tutela de su primer entrenador, Salvador Aparicio.</p>
+
+      <p class="section__paragraph">En el año 1994, a la edad de 7 años, Messi ingresó a las inferiores del club
+        rosarino Newell's Old Boys. Fue en
+        este equipo argentino donde su magia comenzó a destacar, deslumbrando a propios y extraños con su capacidad para
+        meter goles y gambetear defensores. Sin embargo, el camino del 10 estuvo lleno de obstáculos y dificultades. A
+        los 8 años, se le diagnosticó una deficiencia en la hormona del crecimiento, que le impedia a Leo soñar con una
+        carrera en el fútbol. El tratamiento necesario tenía un costo mensual de 900 dólares, un desafío financiero que
+        no impidió que Lionel continuara persiguiendo su sueño. Leo siempre cuenta cómo siendo un nene se aplicaba él
+        mismo el tratamiento inyectandose las piernas.</p>
+
+      <p class="section__paragraph">El destino de Messi cambió de forma definitiva el 17 de septiembre de 2000, cuando
+        viajó a la ciudad de
+        Barcelona, España, para una prueba en las juveniles del FC Barcelona, en La Masía. Allí, tuvo que compartir el
+        terreno de juego con jóvenes talentos como Cesc Fábregas y Gerard Piqué. Su actuación no pasó desapercibida,
+        impresionando a todos con su asombroso dominio de la pelota, su velocidad, su cambio de ritmo y su destreza para
+        esquivar piernas rivales. Ya con 13 años todos veían el futuro que ese chico podría tener, incluído Carlex
+        Rexach, quien dijo "Tenía claro que, si no le fichábamos, nos arrepentiríamos".
+        A pesar de algunas dudas de entrenadores y directivos, la determinación y la habilidad de Messi finalmente
+        encontraron su hogar en el Barcelona. El 14 de diciembre del mismo año, Carles Rexach, secretario técnico del FC
+        Barcelona, junto con Horacio Gaggioli, agente del fútbol argentino y Joseph Minguela, agente del fútbol español,
+        plasmó un compromiso en una servilleta de papel, asegurando la contratación de Messi. Esta icónica servilleta,
+        exhibida en el Museo del Club, representa el inicio de una era legendaria.</p>
+
+      <p class="section__paragraph">El 8 de enero de 2001, se formalizó el acuerdo, incluyendo la incorporación del
+        padre de Messi al cuerpo
+        técnico del fútbol base como una estrategia para encubrir el fichaje del joven prodigio. La familia Messi
+        emprendió un nuevo capítulo en sus vidas, estableciéndose en Barcelona, primero en un hotel y luego en un
+        apartamento en Les Corts.
+        Desde ese momento, Lionel Messi trascendió las barreras del deporte y se convirtió
+        en una leyenda viviente del
+        fútbol. Su magia en el terreno de juego, su inigualable capacidad para crear y meter goles, y su humildad innata
+        lo han consagrado como el mejor de todos los tiempos. A lo largo de su carrera, ha cosechado innumerables
+        logros, incluyendo siete Balones de Oro, siete premios FIFA al Mejor Jugador del Mundo, seis Botas de Oro y dos
+        Balones de Oro de la Copa Mundial de Fútbol. Su legado perdurará en la historia del deporte y su inspiración
+        seguirá guiando a futuras generaciones de amantes del fútbol en todo el mundo.</p>
+      <div class="section__images">
+        <img src="" alt="Imagen 1" class="section__img">
+        <img src="" alt="Imagen 2" class="section__img">
+        <img src="" alt="Imagen 3" class="section__img">
+        <img src="" alt="Imagen 4" class="section__img">
+      </div>
+      <img src="https://em-content.zobj.net/thumbs/120/google/350/flag-argentina_1f1e6-1f1f7.png"
+        alt="Bandera Argentina" class="section__icon">
+    </section>
+
+    <div class="full-bleed">
+      <section class="section" id="trayectoria" aria-labelledby="trayectoria-title">
+        <h2 class="section__title" id="trayectoria-title">Trayectoria</h2>
+        <i class="section__icon fas fa-futbol"></i>
+        <ul class="career-path">
+          <li class="career-path__team">
+            <div class="team__info">
+              <h3 class="team__name">Grandoli</h3>
+              <img src="images/clubs/" alt="Grandoli badge" class="team__badge">
+              <span class="team__years">2002 to 2010</span>
+            </div>
+            <p class="career-path__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, quaerat illo
+              officiis
+              distinctio ea dolorem.</p>
+            <img src="" alt="Lionel Messi jugando con la camiseta de Grandoli" class="career-path__player-pic">
+          </li>
+
+          <li class="career-path__team">
+            <div class="team__info">
+              <h3 class="team__name">Newell's Old Boys</h3>
+              <img src="images/clubs/Newells.png" alt="Newell's Old Boys badge" class="team__badge">
+              <span class="team__years">2002 to 2010</span>
+            </div>
+            <p class="career-path__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, quaerat illo
+              officiis
+              distinctio ea dolorem.</p>
+            <img src="" alt="Lionel Messi jugando con la camiseta de Newell's Old Boys" class="career-path__player-pic">
+          </li>
+
+          <li class="career-path__team">
+            <div class="team__info">
+              <h3 class="team__name">FC Barcelona</h3>
+              <img src="images/clubs/barcelona.png" alt="FC Barcelona badge" class="team__badge">
+              <span class="team__years">2002 to 2010</span>
+            </div>
+            <p class="career-path__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, quaerat illo
+              officiis
+              distinctio ea dolorem.</p>
+            <img src="" alt="Lionel Messi jugando con la camiseta del FC Barcelona" class="career-path__player-pic">
+          </li>
+
+          <li class="career-path__team">
+            <div class="team__info">
+              <h3 class="team__name">Paris Saint Germain</h3>
+              <img src="images/clubs/psg.png" alt="PSG badge" class="team__badge">
+              <span class="team__years">2002 to 2010</span>
+            </div>
+            <p class="career-path__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, quaerat illo
+              officiis
+              distinctio ea dolorem.</p>
+            <img src="" alt="Lionel Messi jugando con la camiseta del PSG" class="career-path__player-pic">
+          </li>
+
+          <li class="career-path__team">
+            <div class="team__info">
+              <h3 class="team__name">Inter de Miami</h3>
+              <img src="images/clubs/InterMiami.png" alt="Inter Miami badge" class="team__badge">
+              <span class="team__years">2002 to 2010</span>
+            </div>
+            <p class="career-path__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, quaerat illo
+              officiis distinctio ea dolorem.</p>
+            <img src="" alt="Lionel Messi jugando con la camiseta del Inter Miami" class="career-path__player-pic">
+          </li>
+        </ul>
       </section>
-
     </div>
 
+    <section class="section" style="" id="logros" aria-labelledby="logros-title">
+      <h2 class="section__title" id="logros-title">Logros</h2>
+      <i class="section__icon fas fa-trophy"></i>
+      <table class="table">
+        <caption class="table__caption">Logros grupales</caption>
+        <thead class="table__head">
+          <tr class="table__row">
+            <th class="table__header" scope="col">Equipo</th>
+            <th class="table__header table__header--start" scope="col">Trofeos</th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr class="table__row">
+            <th class="table__team" scope="row">FC Barcelona</th>
+            <td class="table__trophies">
+              <span class="table__trophy" title="Liga Española">
+                <img src="images/trophies/LaLiga.png" alt="La Liga Española" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">10</span>
+              </span>
+              <span class="table__trophy" title="Copa del Rey">
+                <img src="images/trophies/CopaDelRey.png" alt="Copa del Rey" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">7</span>
+              </span>
+              <span class="table__trophy" title="Supercopa Española">
+                <img src="images/trophies/SupercopaEspaña.png" alt="Supercopa Española" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">8</span>
+              </span>
+              <span class="table__trophy" title="Champions League">
+                <img src="images/trophies/Champions.png" alt="Champions League" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">4</span>
+              </span>
+              <span class="table__trophy" title="Supercopa de Europa">
+                <img src="images/trophies/SupercopaUEFA.png" alt="Supercopa de Europa" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">3</span>
+              </span>
+              <span class="table__trophy" title="Mundial de Clubes">
+                <img src="images/trophies/MundialDeClubes.png" alt="Mundial de Clubes" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">3</span>
+              </span>
+            </td>
+          </tr>
 
+          <tr class="table__row">
+            <th class="table__team" scope="row">PSG</th>
+            <td class="table__trophies">
+              <span class="table__trophy" title="Liga Francesa">
+                <img src="images/trophies/Ligue1.png" alt="Ligue 1" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">1</span>
+              </span>
+              <span class="table__trophy" title="Supercopa Francesa">
+                <img src="images/trophies/SupercopaFrancia.png" alt="Supercopa Francesa" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">1</span>
+              </span>
+            </td>
+          </tr>
 
+          <tr class="table__row">
+            <th class="table__team" scope="row">Selección Argentina</th>
+            <td class="table__trophies">
+              <span class="table__trophy" title="Copa Mundial Sub20">
+                <img src="images/trophies/Mundial-sub-20.png" alt="Copa del Mundo Sub20" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">1</span>
+              </span>
+              <span class="table__trophy" title="Medalla de Oro Olímpica sub23"><img
+                  src="images/trophies/OlimpicosSub23.png" alt="Medalla de Oro Olímpica" class="trophy__img"><span
+                  class="trophy__amount" aria-label="Cantidad ganados">1</span>
+              </span>
+              <span class="table__trophy" title="Copa América">
+                <img src="images/trophies/CopaAmerica.png" alt="" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">1</span>
+              </span>
+              <span class="table__trophy" title="Copa de Campeones Conmebol UEFA - Finalissima">
+                <img src="images/trophies/Finalissima.png" alt="Finalissima" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">1</span>
+              </span>
+              <span class="table__trophy" title="Copa del Mundo">
+                <img src="images/trophies/Mundial.png" alt="Copa del Mundo" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">1</span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <caption class="table__caption">Logros individuales</caption>
+        <thead class="table__head">
+          <tr class="table__row">
+            <th class="table__header">Distinciones</th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          <tr class="table__row">
+            <td class="table__trophies">
+              <span class="table__trophy" title="Bota de Oro Mundial Sub20">
+                <img src="images/trophies/BotaDeOroMundialS20.png" alt="Bota de Oro del Mundial Sub20"
+                  class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados"></span>
+              </span>
+              <span class="table__trophy" title="Pichichi de La Liga">
+                <img src="images/trophies/Pichichi.png" alt="Pichichi de La Liga" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">8</span>
+              </span>
+              <span class="table__trophy" title="Bota de Oro - Clubes">
+                <img src="images/trophies/BotaDeOroClubes.png" alt="Bota de Oro a nivel clubes" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">6</span>
+              </span>
+              <span class="table__trophy" title="Jugador FIFA del Año">
+                <img src="images/trophies/JugadorDelAñoFIFA.png" alt="Jugador FIFA del Año" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados"></span>
+              </span>
+              <span class="table__trophy" title="Jugador UEFA del Año">
+                <img src="images/trophies/JugadorDelAñoUEFA.png" alt="Jugador UEFA del Año" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">2</span>
+              </span>
+              <span class="table__trophy" title="Mejor jugador del Mundial">
+                <img src="images/trophies/trofeoMejorJugadorMundial.png" alt="Mejor jugador del Mundial"
+                  class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">3</span>
+              </span>
+              <span class="table__trophy" title="FIFA The Best">
+                <img src="images/trophies/TheBest.png" alt="FIFA The Best" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">2</span>
+              </span>
+              <span class="table__trophy" title="Balón de Oro">
+                <img src="images/trophies/BalonDeOro.png" alt="Balón de Oro" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">7</span>
+              </span>
+              <span class="table__trophy" title="Laureus Deportista del Año">
+                <img src="images/trophies/Laureus.png" alt="Laureus Deportista del Año" class="trophy__img">
+                <span class="trophy__amount" aria-label="Cantidad ganados">2</span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <a class="back-to-top" href="#top">
+      <i>Top</i>
+    </a>
   </main>
+  <footer class="footer"></footer>
 </body>
 
 </html>
